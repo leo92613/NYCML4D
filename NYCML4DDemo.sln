@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYCML4DDemo.CSharp", "NYCML4DDemo.CSharp.csproj", "{BDE21E47-E423-8752-8C0F-768EA1345343}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NYCML4DDemo.CSharp.Editor", "NYCML4DDemo.CSharp.Editor.csproj", "{3F93CAEE-04A5-4558-517B-0154F7CD1C70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDE21E47-E423-8752-8C0F-768EA1345343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE21E47-E423-8752-8C0F-768EA1345343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE21E47-E423-8752-8C0F-768EA1345343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE21E47-E423-8752-8C0F-768EA1345343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F93CAEE-04A5-4558-517B-0154F7CD1C70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F93CAEE-04A5-4558-517B-0154F7CD1C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F93CAEE-04A5-4558-517B-0154F7CD1C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F93CAEE-04A5-4558-517B-0154F7CD1C70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
