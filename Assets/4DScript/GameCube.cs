@@ -63,7 +63,7 @@ namespace Holojam.IO {
         mesh.vertices = _vertices;
         mesh.SetIndices(faces, MeshTopology.Quads, 0);
         mesh.RecalculateBounds();
-        mesh.Optimize();
+        ;
         mesh.SetTriangles(mesh.GetTriangles(0), 0);
         }      
     }

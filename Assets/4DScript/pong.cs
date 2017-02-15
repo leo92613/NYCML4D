@@ -99,7 +99,7 @@ namespace FRL.IO.FourD {
             mesh.vertices = _vertices;
             mesh.SetIndices(faces, MeshTopology.Quads, 0);
             mesh.RecalculateBounds();
-            mesh.Optimize();
+            ;
             mesh.SetTriangles(mesh.GetTriangles(0), 0);
             GetComponent<MeshFilter>().mesh = mesh;
             GetComponent<MeshCollider>().sharedMesh = null;

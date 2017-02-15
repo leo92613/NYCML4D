@@ -63,7 +63,7 @@ namespace FRL.IO.FourD
             mesh.vertices = vertices;
             mesh.SetIndices(faces, MeshTopology.Quads, 0);
             mesh.RecalculateBounds();
-            mesh.Optimize();
+            ;
             GetComponent<MeshFilter>().mesh = mesh;
 
         }
@@ -112,7 +112,7 @@ namespace FRL.IO.FourD
             mesh.vertices = vertices;
             mesh.SetIndices(faces, MeshTopology.Quads, 0);
             mesh.RecalculateBounds();
-            mesh.Optimize();
+            ;
         }
         public void Renew()
         {
@@ -126,7 +126,7 @@ namespace FRL.IO.FourD
             mesh.vertices = vertices;
             mesh.SetIndices(faces, MeshTopology.Quads, 0);
             mesh.RecalculateBounds();
-            mesh.Optimize();
+            ;
             UpdateRotation(hypermesh);
         }
 

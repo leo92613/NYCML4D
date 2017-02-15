@@ -28,7 +28,6 @@ namespace FRL.IO.FourD
                             vertices[n] = new Vector4((float)l* 0.175f, (float)k* 0.175f, (float)j* 0.175f, (float)i* 0.175f);
                             srcVertices[n++] = new Vector4((float)l* 0.175f, (float)k* 0.175f, (float)j* 0.175f, (float)i* 0.175f);
                         }
-           // Debug.Log("init is finished");
         }
         public HyperCubeMesh( Vector4 A_) {
            // Debug.Log(A_);
@@ -88,7 +87,7 @@ namespace FRL.IO.FourD
             mesh.vertices = vertices;
             mesh.SetIndices(faces, MeshTopology.Quads, 0);
             mesh.RecalculateBounds();
-            mesh.Optimize();
+            ;
             mesh.SetTriangles(mesh.GetTriangles(0), 0);
             GetComponent<MeshCollider>().sharedMesh = null;
             GetComponent<MeshCollider>().sharedMesh = mesh;
@@ -112,7 +111,6 @@ namespace FRL.IO.FourD
 
         void Awake()
         {
-           // box = this.GetComponent<Transform>();
             cube = new HyperCubeMesh(center);
             #region Faces
             faces = new int[] { 4,0,8,12,
@@ -153,7 +151,7 @@ namespace FRL.IO.FourD
             mesh.vertices = vertices;
             mesh.SetIndices(faces, MeshTopology.Quads, 0);
             mesh.RecalculateBounds();
-            mesh.Optimize();
+            ;
             mesh.SetTriangles(mesh.GetTriangles(0), 0);
             GetComponent<MeshFilter>().mesh = mesh;
             GetComponent<MeshCollider>().sharedMesh = mesh;
@@ -194,37 +192,12 @@ namespace FRL.IO.FourD
         void Update()
         {
                 if (isTriggerPressed) {
-                    //Vector3 relapos = new Vector3();
-                    //relapos = (B_ - box.position) * 8f / 3f;
-                    //float r = (float)Math.Sqrt(relapos.x * relapos.x + relapos.y * relapos.y + relapos.z * relapos.z);
-                    //if (r < radius) {
-                    //    B = new Vector4(relapos.x, relapos.y, relapos.z, (float)Math.Sqrt(radius * radius - relapos.x * relapos.x - relapos.y * relapos.y - relapos.z * relapos.z));
-                    //} else {
-                    //    //float length = relapos.magnitude;
-                    //    Vector3 Q = (radius / r) * relapos;
-                    //    relapos = Q + box.position;
-                    //    B = new Vector4(Q.x, Q.y, Q.z, 0f);
-                    //}
                     UpdateRotation(cube);
-                    //A = B;
-                
             }
         }
 
         public void OnGlobalTriggerPressDown(ViveControllerModule.EventData eventData) {
             isTriggerPressed = true;
-            //B_ = eventData.module.transform.position;
-            //Vector3 relapos = new Vector3();
-            //relapos = (B_ - box.position) * 8f / 3f;
-            //float r = (float)Math.Sqrt(relapos.x * relapos.x + relapos.y * relapos.y + relapos.z * relapos.z);
-            //if (r < radius) {
-            //    B = new Vector4(relapos.x, relapos.y, relapos.z, (float)Math.Sqrt(radius * radius - relapos.x * relapos.x - relapos.y * relapos.y - relapos.z * relapos.z));
-            //} else {
-            //    Vector3 Q = (radius / r) * relapos;
-            //    B = new Vector4(Q.x, Q.y, Q.z, 0f);
-            //}
-            //A = B;
-           // Debug.Log("Trigger Pressed Down");
         }
 
         public void OnGlobalTriggerPress(ViveControllerModule.EventData eventData) {
